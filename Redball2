@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script type = 'text/javascript'>
+function sayhelloworld(){
+  alert ('Vanessa McCarter');
+}
+</script>
+<script type = 'text/javascript'>
+function moveup(){
+  redball.top=redball.top -100
+}
+</script>
+<script type = 'text/javascript'>
+function movedown(){
+  redball.top=redball.top +100
+}
+</script>
+<script type = 'text/javascript'>
+function moveright(){
+  redball.left=redball.left +100
+}
+</script>
+<script type = 'text/javascript'>
+function moveleft(){
+  redball.left=redball.left -100
+}
+</script>
+<script type = 'text/javascript'>
+function moveupleft(){
+  moveup();
+  moveleft();
+}
+function moveupright(){
+  moveup();
+  moveright();
+}
+function movedownleft(){
+  movedown();
+  moveleft();
+}
+function movedownright(){
+  movedown();
+  moveright();
+}
+
+</script>
+
+<script type="text/javascript">
+function maketriangle{
+move right(); 
+
+}
+</script>
+</head>
+<body>
+<img id="redball" src='http://www.icstars.org/files/redball.jpg'/>
+<button onclick="sayhelloworld();">say hi</button>
+<button onclick="moveup();">move up</button>
+<button onclick="movedown();">move down</button>
+<button onclick="moveleft();">move left</button>
+<button onclick="moveright();">move right</button>
+
+
+
+<button onclick="moveupright();">move upright</button>
+<button onclick="movedownright();">move downright</button>
+<button onclick="moveupleft();">move upleft</button>
+<button onclick="movedownleft();">move downleft</button>
+
+</body>
+</html>
