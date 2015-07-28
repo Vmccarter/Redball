@@ -1,0 +1,278 @@
+<html>
+<head>
+<link href="Redball.css" rel="stylesheet" type="text/css">
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+
+function moveup() {
+redball.top=redball.top -10;
+}
+
+</script>
+
+<script>
+function movedown() {
+redball.top=redball.top +10;
+}
+
+</script>
+
+<script>
+function moveleft() {
+redball.left=redball.left -10;
+}
+
+</script>
+
+<script>
+function moveright() {
+redball.left=redball.left +10;
+}
+
+</script>
+
+<script> function myFunction()
+{alert("Vanessa McCarter");
+}
+
+</script>
+
+<script>	
+
+function moveupright() {
+redball.top=redball.top -10;
+redball.left=redball.left +10;
+}
+</script>
+
+<script> 
+
+function movedownleft() {
+redball.top=redball.top +10;
+redball.left=redball.left -10;
+}
+</script>
+
+<script> 
+function movedownright() {
+redball.top=redball.top +10;
+redball.left=redball.left +10;
+}
+</script>	
+
+<script> 
+function moveupleft() {
+redball.top=redball.top -10;
+redball.left=redball.left -10;
+}
+</script>
+
+<script>
+function movesquare() {
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();	
+}
+
+</script>
+
+<script> 
+function movetriangle() {
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+}
+</script>	
+
+<script>
+function moveoctagon() {
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+}
+</script>
+<script>
+function moveupagain() {
+if (redball.top>50){
+redball.top=redball.top -10;
+}
+else {
+alert("Wait")
+}
+}
+
+function movedownagain() {
+if (redball.top>500){
+alert("Freeze")
+}
+else {
+redball.top=redball.top +10;
+}
+} 
+
+function moverightagain() {
+if (redball.left>1200){
+alert("Don't Move")
+}
+else {
+redball.left=redball.left +10;
+}
+} 
+
+function moveleftagain() {
+if (redball.left<0){
+alert("Stop!")
+}
+else {
+redball.left=redball.left -10;
+}
+} 
+</script>	
+</head>
+<body>
+
+<div id=console>
+
+<img id='redball' src='http://www.icstars.org/files/redball.jpg'/>
+
+<a id="movebutt">
+<button onclick="myFunction();">Hello World</button>
+
+
+
+
+
+<button onclick="moveupright();">Upright</button>
+<button onclick="moveupleft();">Upleft</button>
+<button onclick="movedownright();">Downright</button>
+<button onclick="movedownleft();">Downleft</button>
+
+<button onclick="moveupagain();">Moveup</button>
+<button onclick="movedownagain();">Movedown</button>
+<button onclick="moverightagain();">Moveright</button>
+<button onclick="moveleftagain();">Moveleft</button>
+
+
+<button onclick="movesquare();">Square</button>
+<button onclick="movetriangle();">Triangle</button>
+<button onclick="moveoctagon();">Octagon</button>
+
+
+</a>
+
+</div>
+</body>
+
